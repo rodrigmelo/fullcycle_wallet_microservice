@@ -1,0 +1,18 @@
+POST http://localhost:8080/clients HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "test",
+    "email": "test@j.com"
+}
+
+###
+
+POST http://localhost:8080/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+    "account_id_from": "1",
+    "account_id_to": "2",
+    "amount": 10
+}
