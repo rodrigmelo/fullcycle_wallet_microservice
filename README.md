@@ -22,11 +22,14 @@ Esse projeto conta com dois microserviços desenvolvidos em golang e javascript 
 
  3. As tabelas são automaticamente populadas com as seguintes informações:
     - clients:
-      - id: 1, name: John Doe
-      - id: 2, name: Jane Smith
+        - id: 1, name: John Doe
+        - id: 2, name: Jane Smith
     - accounts:
-      - id: 1, client_id: 1, balance: 1000
-      - id: 2, client_id: 2, balance: 0
+        - id: 1, client_id: 1, balance: 1000
+        - id: 2, client_id: 2, balance: 0
+    - balances:
+        - id: 1, account_id: 1, balance: 1000
+        - id: 2, account_id: 2, balance: 0
         
 4. Cada serviço contem um arquivo .http com as requests necessárias para testar a aplicação
   - golang:
